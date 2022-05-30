@@ -36,10 +36,11 @@ function activeMenuAtCurrentSection(section) {
 }
 
 function showNavOnScroll() {
+  const navigation = document.getElementById("navigation").classList;
   if (scrollY > 0) {
-    navigation.classList.add("scroll");
+    navigation.add("scroll");
   } else {
-    navigation.classList.remove("scroll");
+    navigation.remove("scroll");
   }
 }
 
